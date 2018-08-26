@@ -19,6 +19,7 @@ public class GuessingGame {
 			//System.out.println("You were wrong.");
 				System.out.println(result);
 		}
+		input.close();
 	}
-	input.close();
+	
 }
