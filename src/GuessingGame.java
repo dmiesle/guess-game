@@ -10,11 +10,15 @@ public class GuessingGame {
 		System.out.println("Chose a number between 1 and 10:");
 		int guessedNumber = input.nextInt();
 
+		String result;
 		if (secretNumber == guessedNumber){
-			System.out.println("You guessed correctly");
+				result = "You won!";
+			//System.out.println("You guessed correctly");
 		}		else {
-			System.out.println("You were wrong.");
+				result = "You lost!";
+			//System.out.println("You were wrong.");
+				System.out.println(result);
 		}
 	}
-
+	input.close();
 }
